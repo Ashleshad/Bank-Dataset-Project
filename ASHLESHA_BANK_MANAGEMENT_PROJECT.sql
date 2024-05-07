@@ -152,7 +152,7 @@ JOIN bank_details AS bname
 WHERE employee_id = 52 AND branch_name = 'icic_p';
 
 -- Q2
--- Count the number of employees working in the loan department and show its opening dates and address.
+-- Count the number of employees working in the loan department.
 SELECT COUNT(Employee_id) AS employee_count
 FROM employees
 WHERE Department_id = (SELECT Department_id FROM Department WHERE Department_name = 'Loan');
@@ -189,19 +189,19 @@ SELECT * FROM icic_bank;
 
 -- Q7
 -- Create view city, department name whose opening date is less than 24 May 04
-CREATE VIEW openingDate AS 
+CREATE VIEW openingDt AS 
 SELECT city, department_name, Opeaning_Date 
 FROM customer, account_type 
 WHERE Opeaning_Date < '04-05-24';
-SELECT * FROM openingDate;
+SELECT * FROM openingDt;
 
 -- Q8
 -- Create view only job id for clerk, manager, an accountant with all detail and name it employee job_deatils
-CREATE VIEW employeejobdetailse AS
+CREATE VIEW employeejobdetails AS
 SELECT *
 FROM job_details
 WHERE job_id IN ('st_clerk', 'st_man', 'fi_account');
-SELECT * FROM employeejobdetailse;
+SELECT * FROM employeejobdetails;
 
 -- Q9
 -- In the job details change the atm pin 423295535 with 42321992
