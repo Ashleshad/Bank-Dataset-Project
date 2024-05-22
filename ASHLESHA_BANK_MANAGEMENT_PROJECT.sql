@@ -19,28 +19,27 @@ Create table Account_type(Account_no INT PRIMARY KEY,Type_Account VARCHAR(255),M
 select * from Bank_details;
 INSERT INTO Bank_Details(Branch_code,Address,Department_id,Branch_name,State)
 VALUES
-(100,'Ngapur',1,'ICIC_N','Maharashtra'),
+(100,'Nagpur',1,'ICIC_N','Maharashtra'),
 (101,'pune',1,'ICIC_P','Maharashtra'),
 (102,'Mumbai',1,'ICIC_M','Maharashtra'),
 (103,'delhi',1,'ICIC_D','DEL'),
 (104,'Mumbai',1,'ICIC_M','Maharashtra'),
 (105,'delhi',1,'ICIC_D','DEL'),
-(106,'Ngapur',1,'ICIC_N','Maharashtra'),
+(106,'Nagpur',1,'ICIC_N','Maharashtra'),
 (107,'pune',8,'ICIC_P','Maharashtra'),
 (108,'Mumbai',8,'ICIC_M','Maharashtra'),
-(109,'Ngapur',8,'ICIC_N','Maharashtra'),
+(109,'Nagpur',8,'ICIC_N','Maharashtra'),
 (110,'pune',11,'ICIC_P','Maharashtra'),
 (111,'Mumbai',11,'ICIC_M','Maharashtra'),
 (112,'delhi',11,'ICIC_D','DEL'),
-(113,'Ngapur',11,'ICIC_N','Maharashtra'),
+(113,'Nagpur',11,'ICIC_N','Maharashtra'),
 (114,'pune',11,'ICIC_P','Maharashtra'),
 (115,'Mumbai',16,'ICIC_M','Maharashtra'),
-(116,'Ngapur',16,'ICIC_N','Maharashtra'),
+(116,'Nagpur',16,'ICIC_N','Maharashtra'),
 (117,'pune',16,'ICIC_P','Maharashtra'),
 (118,'Mumbai',19,'ICIC_M','Maharashtra'),
 (119,'delhi',19,'ICIC_D','DEL'),
 (120,'Pune',21,'ICIC_P','Maharashtra');
-
 Select * from Employees;
 INSERT INTO Employees(Employee_id,First_name,Department_id,Manager_id,Job_id,Email,Hire_date,Phone_no,Salary)VALUES
 (50,'Samuel',1,20,'ST_CLERK','SMCCAIN',str_to_date('23-Nov-07','%d-%b-%y'),'650.505.1876',3800),
@@ -67,23 +66,23 @@ INSERT INTO Employees(Employee_id,First_name,Department_id,Manager_id,Job_id,Ema
 
 select * from customer;
 INSERT INTO Customer(Account_no,First_name,City,Branch_code,Employee_id,Phone_no,ATMNO,Exp_date,Pin_no)VALUES
-(12345,'Samuel','Ngapur',100,50,'650.505.1876',423705689,str_to_date('23-Apr-06','%d-%b-%y'),5689),
+(12345,'Samuel','Nagpur',100,50,'650.505.1876',423705689,str_to_date('23-Apr-06','%d-%b-%y'),5689),
 (67899,'Allan','pune',101,51,'650.505.2876',423568971,str_to_date('24-May-07','%d-%b-%y'),8971),
 (10112,'Irene','Mumbai',102,52,'650.505.3876',423432253,str_to_date('04-Jan-08','%d-%b-%y'),12253),
 (13145,'Kevin','delhi',103,53,'650.505.4876',423295535,str_to_date('24-Jan-06','%d-%b-%y'),15535),
 (15167,'Julia','Mumbai',104,54,'650.501.1876',423158817,str_to_date('23-Feb-06','%d-%b-%y'),18817),
 (18190,'Donald','delhi',105,55,'650.501.2876',423022099,str_to_date('21-Jun-07','%d-%b-%y'),22099),
-(20210,'Christopher','Ngapur',106,56,'650.501.3876',422885381,str_to_date('03-Feb-08','%d-%b-%y'),25381),
+(20210,'Christopher','Nagpur',106,56,'650.501.3876',422885381,str_to_date('03-Feb-08','%d-%b-%y'),25381),
 (22230,'TJ','pune',107,57,'650.501.4876',422748663,str_to_date('27-Jan-04','%d-%b-%y'),28663),
 (24250,'Lisa','Mumbai',108,58,'650.507.9811',422611945,str_to_date('20-Feb-05','%d-%b-%y'),31945),
-(26270,'Karen','Ngapur',109,59,'650.507.9822',422475227,str_to_date('24-Jun-06','%d-%b-%y'),35227),
+(26270,'Karen','Nagpur',109,59,'650.507.9822',422475227,str_to_date('24-Jun-06','%d-%b-%y'),35227),
 (28290,'Valli','pune',110,60,'650.507.9833',422338509,str_to_date('07-Feb-07','%d-%b-%y'),38509),
 (30310,'Joshua','Mumbai',111,61,'650.507.9844',422201791,str_to_date('13-Jan-08','%d-%b-%y'),41791),
 (32330,'Randall','delhi',112,62,'515.123.4444',422065073,str_to_date('17-Sep-03','%d-%b-%y'),45073),
-(34350,'Hazel','Ngapur',113,63,'515.123.5555',421928355,str_to_date('17-Feb-04','%d-%b-%y'),48355),
+(34350,'Hazel','Nagpur',113,63,'515.123.5555',421928355,str_to_date('17-Feb-04','%d-%b-%y'),48355),
 (36370,'Luis','pune',114,64,'603.123.6666',421791637,str_to_date('17-Aug-05','%d-%b-%y'),51637),
 (38390,'Trenna','Mumbai',115,65,'515.123.7777',421654919,str_to_date('07-Jun-02','%d-%b-%y'),54919),
-(40410,'Den','Ngapur',116,66,'515.123.8888',421518201,str_to_date('07-Jun-02','%d-%b-%y'),58201),
+(40410,'Den','Nagpur',116,66,'515.123.8888',421518201,str_to_date('07-Jun-02','%d-%b-%y'),58201),
 (42430,'Michael','pune',117,67,'515.123.8080',421381483,str_to_date('07-Jun-02','%d-%b-%y'),61483),
 (44450,'John','Mumbai',118,68,'011.44.1346.329268',421244765,str_to_date('07-Jun-02','%d-%b-%y'),64765),
 (46470,'Nandita','delhi',119,69,'011.44.1346.529268',421108047,str_to_date('21-Apr-08','%d-%b-%y'),68047),
